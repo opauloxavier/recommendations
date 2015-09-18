@@ -240,7 +240,8 @@ span.round-tab:hover {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  min-height: 700px;
+  height: 100%;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -250,7 +251,7 @@ span.round-tab:hover {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 700px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -258,5 +259,27 @@ span.round-tab:hover {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
 }
+
+.customThumb {
+    height: 500px !important;
+    margin:0 0 0 0 !important;
+}
+
+.customCol{
+    padding-right:0px;
+}
+
+.noPadding{
+     padding-right:0px;
+     padding-left:0px;
+}
+a:hover,a:focus{
+    text-transform: none !important;
+}
+
+.tableThumb{
+    width:200px;
+    height:300px;
+}
+

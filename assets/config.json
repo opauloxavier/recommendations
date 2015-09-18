@@ -393,7 +393,7 @@
     "button-groups.less",
     "input-groups.less",
     "navs.less",
-    "navbar.less",
+    "navbar navbar-inverse.less",
     "breadcrumbs.less",
     "pagination.less",
     "pager.less",

@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head> 
+	<title>Sistema de Recomendações</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<script src="assets/js/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mask.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <!-- Static navbar -->
+      <nav class="navbar navbar-inverse navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Contato</a></li>	
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Visitante </strong><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li class="dropdown-header">Sistemas</li>
+                  <li><a href="loginDemonstra.html">Entrar</a></li>
+                  <li><a href="cadastroDemonstra.html">Criar Conta</a></li>
+                  <hr>
+ 				  <li class="dropdown-header">Outros</li>
+                  <li><a href="#">Reportar Bug</a></li>
+                  <li><a href="#">Sugerir Funcionalidade</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+<div class="col-md-12">
+    <div class="row">
+      <div class="col-md-6">
+        <span class="label label-default">Ação</span>
+        <span class="label label-primary">Herói</span>
+        <span class="label label-success">Comédia</span>
+        <span class="label label-info">Documentário</span>
+        <span class="label label-warning">Amor</span>
+        <span class="label label-danger">Quente</span>
+      </div>
+      <div class="col-md-6">
+        <form class="form-inline pull-right" method="POST">
+         <div class="form-group has-feedback">
+            <input type="text" class="form-control" placeholder="Pesquisar" />
+            <i class="form-control-feedback glyphicon glyphicon-search"></i>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+</div>
+
+<div class="row"> <!-- Inicio Grid -->
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center" style="margin-bottom:20px;"> Destaques </h2>
+      </div>      
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+            <a href="#" class="thumbnail">
+              <img class="customThumb" src="content/img/batmanSuperman.jpg" alt="Batman vs Superman">
+            </a>
+      </div>
+      <div class="col-md-3">
+            <a href="#" class="thumbnail">
+              <img class="customThumb" src="content/img/civilWar.jpg" alt="Guerra Civil">
+            </a>
+      </div>
+      <div class="col-md-3">
+            <a href="#" class="thumbnail">
+              <img class="customThumb" src="content/img/starWars.jpg" alt="Star Wars">
+            </a>
+      </div>
+      <div class="col-md-3">
+            <a href="#" class="thumbnail">
+              <img class="customThumb" src="content/img/littlePrince.jpg" alt="O Pequeno Príncipe">
+            </a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  </div>
+  <div clas="row">
+    <table class="table table-striped">
+      <tr>
+          <th> </th>
+          <th> Nome do Filme </th>
+          <th> Gênero </th>
+          <th> Avaliação Média </th>
+          <th> Favorito </th>
+      </tr>
+      <tr>
+          <td> <a href="#" class="thumbnail tableThumb">
+              <img src="content/img/avengersAgeOfUltron.jpg" alt="Avengers: Age of Ultron">
+            </a></td>
+          <td> Vingadores: A era de Ultron</td>
+          <td> <span class="label label-default">Ação</span>
+              <span class="label label-success">Comédia</span>
+          </td>
+          <td> <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+          </td>
+          <td><a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-heart"></i></a>
+          </td>
+      </tr>
+      <tr>
+          <td> <a href="#" class="thumbnail tableThumb">
+              <img src="content/img/civilWar.jpg" alt="Capitão América 3: Guerra Civil">
+            </a></td>
+          <td> Capitão América 3: Guerra Civil</td>
+          <td> <span class="label label-primary">Heróis</span>
+              <span class="label label-danger">Amor</span>
+          </td>
+          <td> <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+          </td>
+          <td><a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-heart"></i></a>
+          </td>
+      </tr>
+      <tr>
+          <td> <a href="#" class="thumbnail tableThumb">
+              <img src="content/img/terminatorGenesys.jpg" alt="Exterminador do Futuro : Genesys" style="width:200px; height:300px;">
+            </a></td>
+          <td> Exterminador do Futuro : Genesys</td>
+          <td> <span class="label label-default">Ação</span>
+              <span class="label label-success">Comédia</span>
+          </td>
+          <td> <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+          </td>
+          <td><a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-heart"></i></a>
+          </td>
+      </tr>
+      <tr>
+          <td> <a href="#" class="thumbnail tableThumb">
+              <img src="content/img/starWars.jpg" alt="Star Wars VII: O despertar da Força" style="width:200px; height:300px;">
+            </a></td>
+          <td> Star Wars VII: O despertar da Força</td>
+          <td> <span class="label label-warning">Ação</span>
+              <span class="label label-info">Comédia</span>
+          </td>
+          <td> <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+               <span class="glyphicon glyphicon-star"></span>
+          </td>
+          <td><a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-heart"></i></a>
+          </td>
+      </tr>
+
+    </table>
+  </div>
+
+
+<div class="row col-md-12">
+  <nav>
+    <ul class="pagination pull-right">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+  </div> <!-- fecha o col-md-12 -->
+</div> <!-- Finaliza o container-fluid-->         
+
+
+
+<footer id="footer" class="footer text-center" style="background-color: #fffff; ">
+<div class="container">
+<p class="text-muted"> Sistema de Recomendações | 2015 - Todos os direitos reservados. Desenvolvido por <a href="http://www.pauloxavier.com" target="_blank" >Paulo Xavier</a> e <a href="https://www.facebook.com/gosegobia?fref=ts" target="_blank">Gabriel Segobia.<br><a href="mailto:contato.pauloxavier@gmail.com" target="_blank" ><span class="glyphicon glyphicon-envelope"> </span> contato.pauloxavier@gmail.com</a> ou <a href="mailto:segobia.gos@gmail.com" target="_blank" ><span class="glyphicon glyphicon-envelope"> </span> segobia.gos@gmail.com </a></p>
+</div>
+</footer>
+
+</body>
+</html>
+
