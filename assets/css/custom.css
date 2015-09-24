@@ -240,7 +240,7 @@ span.round-tab:hover {
 
 /* Carousel base class */
 .carousel {
-  min-height: 700px;
+  min-height: 450px;
   height: 100%;
   margin-bottom: 60px;
 }
@@ -251,19 +251,18 @@ span.round-tab:hover {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 700px;
+  height: 450px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
   position: absolute;
-  top: 0;
+  top: -280px;
   left: 0;
   min-width: 100%;
 }
 
 .customThumb {
-    height: 500px !important;
-    margin:0 0 0 0 !important;
+    height: 200px !important;
 }
 
 .customCol{
@@ -283,3 +282,8 @@ a:hover,a:focus{
     height:300px;
 }
 
+IMG.img-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

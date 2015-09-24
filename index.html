@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head> 
-	<title>Sistema de Recomendações</title>
+	<title>Spot-On</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<script src="assets/js/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
@@ -27,6 +27,7 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
+              <li><a href="catalogoDemonstra.html">Catálogo</a></li>
               <li><a href="#">Sobre</a></li>
               <li><a href="#">Contato</a></li>	
             </ul>
@@ -49,7 +50,7 @@
         </div><!--/.container-fluid -->
       </nav>
     <div class="container-fluid">
-    	<div class="col-md-12 noPadding">
+    	<div class="col-md-12 ">
    <!-- Carousel
     ================================================== -->
 		<div class="row">
@@ -57,73 +58,110 @@
 		      <!-- Indicators -->
 		      <div class="carousel-inner" role="listbox">
 		        <div class="item active">
-		          <img class="first-slide" src="content/img/hungerGames.jpg" alt="First slide">
+		          <img class="first-slide" style="background-position:100px;" src="content/img/wesleyAma.jpg" alt="First slide">
 		          <div class="container">
 		            <div class="carousel-caption">
-		              <h1>Jogos Vorazes - Parte 2</h1>
-		              <p>Veja as últimas aventuras dessa menina que é muita confusão</p>
-		              <p><a class="btn btn-lg btn-danger" href="#" role="button">Cadastre-se e veja o Review</a></p>
+		              <h1>Entrevista com Safadão</h1>
+		              <p>Cantor fala sobre carreira, seu amor pelos fãs e novo Álbum.</p>
+		              <p><a class="btn btn-lg btn-danger" href="#" role="button">Saiba Mais</a></p>
 		            </div>
 		          </div>
 		        </div>
 		    </div>
 		       <hr>
 		</div><!-- /.carousel -->
+	<div class="col-md-8">
+		<div class="row"> <!-- Inicio Grid -->
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="text-center" style="margin-bottom:20px;"> Mais Ouvidas </h3>
+				</div>			
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/batmanSuperman.jpg" alt="Batman vs Superman">
+				</div>
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/avengersAgeOfUltron.jpg" alt="Batman vs Superman">
+				</div>
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/civilWar.jpg" alt="Batman vs Superman">
+				</div>
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/hitman.jpg" alt="Batman vs Superman">
+				</div>
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/littlePrince.jpg" alt="Batman vs Superman">
+				</div>
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/madMax.jpg" alt="Batman vs Superman">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="text-center" style="margin-bottom:20px;"> Mais Ouvidas </h3>
+				</div>			
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/batmanSuperman.jpg" alt="Batman vs Superman">
+				</div>
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/avengersAgeOfUltron.jpg" alt="Batman vs Superman">
+				</div>
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/civilWar.jpg" alt="Batman vs Superman">
+				</div>
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/hitman.jpg" alt="Batman vs Superman">
+				</div>
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/littlePrince.jpg" alt="Batman vs Superman">
+				</div>
+				<div class="col-md-2">
+					      <img class="customThumb img-responsive img-centered" src="content/img/madMax.jpg" alt="Batman vs Superman">
+				</div>
+			</div>
+			</div>
+		</div> <!-- fecha o col-md-8(conteudo a esquerda)-->
+	<div class="col-md-3 col-md-offset-1"> <!-- Conteudo a direita-->
+		<div class="col-md-10 col-md-offset-2">
+			<div class="row">
+				<h4 class="text-center">Top Spot-On</h4>
+			        <div class="tabbable"> <!-- Only required for left/right tabs -->
+				      <ul class="nav nav-tabs">
+				        <li class="active"><a href="#tab1" data-toggle="tab">Músicas</a></li>
+				        <li><a href="#tab2" data-toggle="tab">Artistas</a></li>
+				        <li><a href="#tab3" data-toggle="tab">Gêneros</a></li>
+				      </ul>
+				      <div class="tab-content">
+				        <div class="tab-pane active" id="tab1">
+				          	<div class="list-group">
+							  <a href="#" class="list-group-item active">Wesley Safadão - Cachorrão da Madrugada <span class="badge">1</span></a>
+							  <a href="#" class="list-group-item">Wesley Safadão - Anjo <span class="badge">2</span></a>
+							  <a href="#" class="list-group-item">Legião Urbana - Pais e Filhos <span class="badge">3</span></a>
+							</div>
+				        </div>
+				        <div class="tab-pane fade" id="tab2">
+				          	<div class="list-group">
+							  <a href="#" class="list-group-item active">Wesley Safadão</a>
+							  <a href="#" class="list-group-item">Frank Sinatra</a>
+							  <a href="#" class="list-group-item">Callipso</a>
+							</div>
+				        </div>
+				         <div class="tab-pane fade" id="tab3">
+				          <div class="list-group">
+							  <a href="#" class="list-group-item active">Pagode</a>
+							  <a href="#" class="list-group-item">Funk</a>
+							  <a href="#" class="list-group-item">PagoFunk</a>
+							</div>
+				        </div>
+				      </div>
+				    </div>
+			</div>
+		</div>
+	</div>
 
-	<div class="row"> <!-- Inicio Grid -->
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="text-center" style="margin-bottom:20px;"> Destaques da Semana </h2>
-			</div>			
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				    <a href="#" class="thumbnail">
-				      <img class="customThumb" src="content/img/batmanSuperman.jpg" alt="Batman vs Superman">
-				    </a>
-			</div>
-			<div class="col-md-3">
-				    <a href="#" class="thumbnail">
-				      <img class="customThumb" src="content/img/civilWar.jpg" alt="Guerra Civil">
-				    </a>
-			</div>
-			<div class="col-md-3">
-				    <a href="#" class="thumbnail">
-				      <img class="customThumb" src="content/img/starWars.jpg" alt="Star Wars">
-				    </a>
-			</div>
-			<div class="col-md-3">
-				    <a href="#" class="thumbnail">
-				      <img class="customThumb" src="content/img/littlePrince.jpg" alt="O Pequeno Príncipe">
-				    </a>
-			</div>
-		</div>
-		<div class="row">
-				<div class="col-md-3">
-				    <a href="#" class="thumbnail">
-				      <img class="customThumb" src="content/img/madMax.jpg" alt="Mad Max">
-				    </a>
-			</div>
-			<div class="col-md-3">
-				    <a href="#" class="thumbnail">
-				      <img class="customThumb" src="content/img/hitman.jpg" alt="Hitman">
-				    </a>
-			</div>
-			<div class="col-md-3">
-				    <a href="#" class="thumbnail">
-				      <img class="customThumb" src="content/img/terminatorGenesys.jpg" alt="Terminator Genesys">
-				    </a>
-			</div>
-			<div class="col-md-3">
-				    <a href="#" class="thumbnail">
-				      <img class="customThumb" src="content/img/avengersAgeOfUltron.jpg" alt="Avengers: Age of Ultron">
-				    </a>
-			</div>
-
-		</div>
-		</div>
-
-	</div> <!-- fecha o col-md-12 -->
 </div> <!-- Finaliza o container-fluid-->
 
 <footer id="footer" class="footer text-center" style="background-color: #fffff; ">
