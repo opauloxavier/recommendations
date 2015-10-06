@@ -46,132 +46,239 @@
               </li>
             </ul>
           </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
+        </div><!--/.container-Wfluid -->
       </nav>
 <div class="col-md-12">
-  <legend>Inserir Música</legend>
-  <div class="col-md-8">
-    <div class="row">           
-      <form class="form-horizontal">
-        <fieldset>
-        <div class="col-md-10">
-        <!-- Text input-->
-          <div class="col-md-10">
-            <div class="form-group">
-              <label class="control-label" for="nomeMusica">Artista</label>  
-              <input id="textinput" name="nomeMusica" value="Wesley Safadão" class="form-control input-md" type="text">
-            </div>
-          </div>
-          <div class="col-md-10">
-            <div class="form-group">
-              <label class="control-label" for="nomeMusica">Nome da Música</label>  
-              <input id="textinput" name="nomeMusica" value="Cachorrão da Madrugada" class="form-control input-md" type="text">
-            </div>
-          </div>
-          <div class="col-md-10">
-            <div class="form-group">
-              <label class="control-label" for="nomeAlbum">Nome do Álbum</label>  
-              <input id="textinput" name="nomeAlbum" value="Paradise" class="form-control input-md" type="text" required="true">
-            </div>
-          </div>
-           <div class="col-md-10">
-            <div class="form-group">
-              <label class="control-label" for="nomeAlbum">Ano Música</label>  
-              <input id="textinput" name="anoMusica" value="2015" class="form-control input-md" type="text" required="true">
-            </div>
-          </div>
-        <div class="col-md-10">
-          <div class="form-group">
-            <label class="control-label" for="nomeAlbum">Ano Álbum</label>  
-            <input id="textinput" name="anoMusica" value="2015" class="form-control input-md" type="text" required="true">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-10">
-            <div class="col-md-5">
-              <div class="form-group">
-                <label class="control-label" for="estilo1">Estilos</label>  
-                <select class="form-control text-center" name="estilo1" required="true" style="margin-bottom:10px;" required="true">
-                      <option value="null"> Escolha um Estilo</option>
-                      <option value="forro" >Forró</option>
-                      <option value="funk">Funk</option>
-                      <option value="sertanejo">Sertanejo</option>
-                      <option value="safadao">Safadão</option> 
-                      <option value="eletronica">Eletrônica</option>
-                      <option value="romantico">Romântico</option>
-                      <option value="arrocha">Arrocha</option>
-                      <option value="lambada">Lambada</option>
-                      <option value="metal">Metal</option>
-                      <option value="surdo">Antes Ser Surdo</option>
-                </select>
-                <select class="form-control text-center" name="estilo2" style="margin-bottom:10px;">
-                      <option value="null">Escolha um Estilo</option>
-                      <option value="forro" >Forró</option>
-                      <option value="funk">Funk</option>
-                      <option value="sertanejo">Sertanejo</option>
-                      <option value="safadao">Safadão</option> 
-                      <option value="eletronica">Eletrônica</option>
-                      <option value="romantico">Romântico</option>
-                      <option value="arrocha">Arrocha</option>
-                      <option value="lambada">Lambada</option>
-                      <option value="metal">Metal</option>
-                      <option value="surdo">Antes Ser Surdo</option>
-                </select>
-                <select class="form-control text-center" name="estilo3" >
-                      <option value="null">Escolha um Estilo</option>
-                      <option value="forro" >Forró</option>
-                      <option value="funk">Funk</option>
-                      <option value="sertanejo">Sertanejo</option>
-                      <option value="safadao">Safadão</option> 
-                      <option value="eletronica">Eletrônica</option>
-                      <option value="romantico">Romântico</option>
-                      <option value="arrocha">Arrocha</option>
-                      <option value="lambada">Lambada</option>
-                      <option value="metal">Metal</option>
-                      <option value="surdo">Antes Ser Surdo</option>
-                </select>
+  <legend>Inserir Dados</legend>
+<div class="col-md-8 col-md-offset-2">
+  <div class="row">
+              <div class="tabbable"> <!-- Only required for left/right tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab1" data-toggle="tab">Música</a></li>
+                  <li><a href="#tab2" data-toggle="tab">Álbum</a></li>
+                  <li><a href="#tab3" data-toggle="tab">Artista</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab1">
+                    <form class="form-horizontal">
+                      <fieldset>
+                      <div class="col-md-12">
+                      <!-- Text input-->
+                        <div class="col-md-4">
+                          <div class="form-group">
+                              <label class="control-label" for="estilo1">Artista</label>  
+                              <select class="form-control text-center" name="estilo1" required="true" style="margin-bottom:10px;" required="true">
+                                    <option value="null"> Escolha o Artista</option>
+                                    <option value="artista1" >Wesley Safadão</option>
+                                    <option value="artista2">Calipso</option>
+                                    <option value="artista3">Iron Maiden</option>
+                                    <option value="artista4">System of a Down</option> 
+                                    <option value="artista5">Frank Aguiar</option>
+                                    <option value="artista6">Sidney Magal</option>
+                              </select>
+                          </div>
+                        </div>
+                        <div class="col-md-10">
+                          <div class="form-group">
+                            <label class="control-label" for="nomeMusica">Nome da Música</label>  
+                            <input id="textinput" name="nomeMusica" value="Cachorrão da Madrugada" class="form-control input-md" type="text">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                           <label class="control-label" for="estilo1">Álbum</label>  
+                              <select class="form-control text-center" name="estilo1" required="true" style="margin-bottom:10px;" required="true">
+                                    <option value="null"> Escolha um Álbum</option>
+                                    <option value="album1" >Paradise</option>
+                                    <option value="album2">Forró na Balada</option>
+                              </select>
+                          </div>
+                        </div>
+                         <div class="col-md-10">
+                          <div class="form-group">
+                            <label class="control-label" for="nomeAlbum">Ano Música</label>  
+                            <input id="textinput" name="anoMusica" value="2015" class="form-control input-md" type="text" required="true">
+                          </div>
+                        </div>
+                      <div class="row">
+                        <div class="col-md-10">
+                          <div class="col-md-5">
+                            <div class="form-group">
+                              <label class="control-label" for="estilo1">Estilos</label>  
+                              <select class="form-control text-center" name="estilo1" required="true" style="margin-bottom:10px;" required="true">
+                                    <option value="null"> Escolha um Estilo</option>
+                                    <option value="forro" >Forró</option>
+                                    <option value="funk">Funk</option>
+                                    <option value="sertanejo">Sertanejo</option>
+                                    <option value="safadao">Safadão</option> 
+                                    <option value="eletronica">Eletrônica</option>
+                                    <option value="romantico">Romântico</option>
+                                    <option value="arrocha">Arrocha</option>
+                                    <option value="lambada">Lambada</option>
+                                    <option value="metal">Metal</option>
+                                    <option value="surdo">Antes Ser Surdo</option>
+                              </select>
+                              <select class="form-control text-center" name="estilo2" style="margin-bottom:10px;">
+                                    <option value="null">Escolha um Estilo</option>
+                                    <option value="forro" >Forró</option>
+                                    <option value="funk">Funk</option>
+                                    <option value="sertanejo">Sertanejo</option>
+                                    <option value="safadao">Safadão</option> 
+                                    <option value="eletronica">Eletrônica</option>
+                                    <option value="romantico">Romântico</option>
+                                    <option value="arrocha">Arrocha</option>
+                                    <option value="lambada">Lambada</option>
+                                    <option value="metal">Metal</option>
+                                    <option value="surdo">Antes Ser Surdo</option>
+                              </select>
+                              <select class="form-control text-center" name="estilo3" >
+                                    <option value="null">Escolha um Estilo</option>
+                                    <option value="forro" >Forró</option>
+                                    <option value="funk">Funk</option>
+                                    <option value="sertanejo">Sertanejo</option>
+                                    <option value="safadao">Safadão</option> 
+                                    <option value="eletronica">Eletrônica</option>
+                                    <option value="romantico">Romântico</option>
+                                    <option value="arrocha">Arrocha</option>
+                                    <option value="lambada">Lambada</option>
+                                    <option value="metal">Metal</option>
+                                    <option value="surdo">Antes Ser Surdo</option>
+                              </select>
 
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="form-group">
+                          <label class="control-label" for="letraMusica" style="margin-bottom:10px;">Letra da Música (opcional) </label>  
+                          <textarea class="form-control" name="letraMusica" rows="15" cols="45">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+
+                          Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+
+                          Casamentiss faiz malandris se pirulitá, Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer Ispecialista im mé intende tudis nuam golada, vinho, uiski, carirí, rum da jamaikis, só num pode ser mijis. Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="form-group">
+                          <input name="anoMusica" value="Enviar Alteração" class="btn btn-primary btn-md pull-right" type="submit">
+                        </div>
+                      </div>
+                    </div>
+                      </fieldset>
+                    </form>
+
+                  </div>
+                  <div class="tab-pane fade" id="tab2">
+                      <form class="form-horizontal">
+                      <fieldset>
+                      <div class="col-md-12">
+                      <!-- Text input-->
+                        <div class="col-md-4">
+                          <div class="form-group">
+                              <label class="control-label" for="estilo1">Artista</label>  
+                              <select class="form-control text-center" name="estilo1" required="true" style="margin-bottom:10px;" required="true">
+                                    <option value="null"> Escolha o Artista</option>
+                                    <option value="artista1" >Wesley Safadão</option>
+                                    <option value="artista2">Calipso</option>
+                                    <option value="artista3">Iron Maiden</option>
+                                    <option value="artista4">System of a Down</option> 
+                                    <option value="artista5">Frank Aguiar</option>
+                                    <option value="artista6">Sidney Magal</option>
+                              </select>
+                          </div>
+                        </div>
+                        <div class="col-md-10">
+                          <div class="form-group">
+                            <label class="control-label" for="nomeAlbum">Nome do Álbum</label>  
+                            <input id="textinput" name="nomeAlbum" placeholder="Insira o nome do Álbum" class="form-control input-md" type="text">
+                          </div>
+                        </div>
+                         <div class="col-md-10">
+                          <div class="form-group">
+                            <label class="control-label" for="nomeAlbum">Ano</label>  
+                            <input id="textinput" name="anoMusica" class="form-control input-md" type="text" required="true" placeholder="Insira o Ano do Álbum">
+                          </div>
+                        </div>
+                      <div class="row">
+                        <div class="col-md-10">
+                          <div class="col-md-5">
+                            <div class="form-group">
+                              <label class="control-label" for="estilo1">Estilos</label>  
+                              <select class="form-control text-center" name="estilo1" required="true" style="margin-bottom:10px;" required="true">
+                                    <option value="null"> Escolha um Estilo</option>
+                                    <option value="forro" >Forró</option>
+                                    <option value="funk">Funk</option>
+                                    <option value="sertanejo">Sertanejo</option>
+                                    <option value="safadao">Safadão</option> 
+                                    <option value="eletronica">Eletrônica</option>
+                                    <option value="romantico">Romântico</option>
+                                    <option value="arrocha">Arrocha</option>
+                                    <option value="lambada">Lambada</option>
+                                    <option value="metal">Metal</option>
+                                    <option value="surdo">Antes Ser Surdo</option>
+                              </select>
+                              <select class="form-control text-center" name="estilo2" style="margin-bottom:10px;">
+                                    <option value="null">Escolha um Estilo</option>
+                                    <option value="forro" >Forró</option>
+                                    <option value="funk">Funk</option>
+                                    <option value="sertanejo">Sertanejo</option>
+                                    <option value="safadao">Safadão</option> 
+                                    <option value="eletronica">Eletrônica</option>
+                                    <option value="romantico">Romântico</option>
+                                    <option value="arrocha">Arrocha</option>
+                                    <option value="lambada">Lambada</option>
+                                    <option value="metal">Metal</option>
+                                    <option value="surdo">Antes Ser Surdo</option>
+                              </select>
+                              <select class="form-control text-center" name="estilo3" >
+                                    <option value="null">Escolha um Estilo</option>
+                                    <option value="forro" >Forró</option>
+                                    <option value="funk">Funk</option>
+                                    <option value="sertanejo">Sertanejo</option>
+                                    <option value="safadao">Safadão</option> 
+                                    <option value="eletronica">Eletrônica</option>
+                                    <option value="romantico">Romântico</option>
+                                    <option value="arrocha">Arrocha</option>
+                                    <option value="lambada">Lambada</option>
+                                    <option value="metal">Metal</option>
+                                    <option value="surdo">Antes Ser Surdo</option>
+                              </select>
+
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="form-group">
+                          <label class="control-label" for="letraMusica" style="margin-bottom:10px;">Descrição do Álbum (opcional) </label>  
+                          <textarea class="form-control" name="letraMusica" rows="15" cols="45">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+
+                          Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+
+                          Casamentiss faiz malandris se pirulitá, Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer Ispecialista im mé intende tudis nuam golada, vinho, uiski, carirí, rum da jamaikis, só num pode ser mijis. Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="form-group">
+                          <input name="anoMusica" value="Enviar Alteração" class="btn btn-primary btn-md pull-right" type="submit">
+                        </div>
+                      </div>
+                    </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="tab3">
+                      Formulario 3
+                  </div>
+                </div>
               </div>
-          </div>
-          </div>
-        </div>
-        <div class="col-md-10">
-          <div class="form-group">
-            <label class="control-label" for="letraMusica">Letra da Música</label>  
-            <textarea class="form-control" name="letraMusica" rows="15" cols="45">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-
-            Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
-
-            Casamentiss faiz malandris se pirulitá, Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer Ispecialista im mé intende tudis nuam golada, vinho, uiski, carirí, rum da jamaikis, só num pode ser mijis. Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-
-            </textarea>
-          </div>
-        </div>
-        <div class="col-md-10">
-          <div class="form-group">
-            <input name="anoMusica" value="Enviar Alteração" class="btn btn-primary btn-md pull-right" type="submit">
-          </div>
-        </div>
-      </div>
-        </fieldset>
-      </form>
-    </div>
-    <div class="row">
-
-    </div>
-   </div>
-  <div class="col-md-4">
-    <h4 class="text-center">Melhores Usuários</h4>
-    <div class="list-group">
-      <a href="#" class="list-group-item active">Tiririca <span class="badge">500</span></a>
-      <a href="#" class="list-group-item">Paulo Xavier<span class="badge">450</span></a>
-      <a href="#" class="list-group-item">Tiradentes<span class="badge">300</span></a>
-      <a href="#" class="list-group-item">Pepe Moreno<span class="badge">150</span></a>
-      <a href="#" class="list-group-item">Peppa Pig<span class="badge">80</span></a>
-      <a href="#" class="list-group-item">Zé Colméia<span class="badge">40</span></a>
-    </div>
   </div>
- 
+  </div>
 </div>
 
 <footer id="footer" class="footer text-center" style="background-color: #fffff; ">
